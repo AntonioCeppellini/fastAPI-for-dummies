@@ -16,8 +16,8 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from ..database import get_db
-from ..models.task import Task as TaskModel
-from ..schemas.task import Task, TaskCreate, TaskUpdate
+from ..models.task_models import Task as TaskModel
+from ..schemas.task_schemas import Task, TaskCreate, TaskUpdate
 
 
 router = APIRouter(
